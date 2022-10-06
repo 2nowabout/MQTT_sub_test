@@ -120,10 +120,6 @@ void application_task(void)
 {
     char * vOut = changesdone ? "true" : "false";
     twr_log_info(vOut);
-    unsigned char ch;
-    unsigned int number = sizeof(subs)/sizeof(twr_radio_sub_t);
-    memcpy(ch, (char*)&number, 2);
-    twr_log_info(ch);
     twr_module_lcd_clear();
 
     static char num[25];
