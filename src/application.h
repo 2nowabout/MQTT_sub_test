@@ -5,7 +5,6 @@
 #define VERSION "0.2"
 #endif
 
-#include <twr.h>
 #include <bcl.h>
 
 #endif
