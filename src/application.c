@@ -22,7 +22,7 @@ bool changesdone = false;
 void bc_change_url(uint64_t *id, const char *topic, void *value, void *param);
 
  static const bc_radio_sub_t subs[] = {
-    {"denurity/-/url/change", BC_RADIO_SUB_PT_STRING, bc_change_url, NULL},
+    {"denurity/-/url/change", BC_RADIO_SUB_PT_INT, bc_change_url, NULL},
 };
 
 void bc_change_url(uint64_t *id, const char *topic, void *value, void *param)
@@ -85,7 +85,7 @@ void button_event_handler(bc_button_t *self, bc_button_event_t event, void *even
         /* code */
     }
  }
- 
+
 // Application initialization function which is called once after boot
 void application_init(void)
 {
